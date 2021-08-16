@@ -1,0 +1,438 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-bar {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1c2431;
+}
+
+.nav-bar .nav-bar-content {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .nav-bar-content #nav-logo img {
+  max-width: 60%;
+}
+
+.nav-bar .nav-bar-content .nav-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-width: 60%;
+}
+
+.nav-bar .nav-bar-content .nav-links .nav-link {
+  color: #bfbfbf;
+}
+
+.intro-section {
+  min-height: 40vh;
+  background-color: #1c2431;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.intro-section .intro-image {
+  max-width: 75%;
+  position: relative;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  z-index: 5;
+}
+
+.intro-section .intro-curvy-background-mobile {
+  width: 100%;
+}
+
+.intro-section .intro-text {
+  position: absolute;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 35rem;
+  top: 48%;
+  max-width: 85%;
+}
+
+.intro-section .intro-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 3.6rem;
+}
+
+.intro-section .intro-text p {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  line-height: 2.4rem;
+  font-size: 1.5rem;
+  color: #e6e6e6;
+}
+
+.intro-section .intro-text .intro-button {
+  border: none;
+  border-radius: 20%;
+  padding: 1.4rem 8rem;
+  background: linear-gradient(60deg, #65e2d9, #339ecc);
+  font-weight: 700;
+  border-top-right-radius: 100% 200px;
+  border-top-left-radius: 100% 200px;
+  border-bottom-right-radius: 100% 200px;
+  border-bottom-left-radius: 100% 200px;
+}
+
+.information-section {
+  min-height: 160rem;
+  background-color: #181f2a;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.information-section .information-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(125%);
+          transform: translateY(125%);
+  min-height: 30rem;
+}
+
+.information-section .information-card .information-image {
+  max-width: 18%;
+  margin-bottom: 3rem;
+}
+
+.information-section .information-card .information-header {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.information-section .information-card .information-text {
+  text-align: center;
+  max-width: 80%;
+  line-height: 2.2rem;
+  color: #e6e6e6;
+}
+
+.productive-section {
+  min-height: 60rem;
+  background-color: #181f2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.productive-section .productive-image {
+  max-width: 80%;
+}
+
+.productive-section .productive-text {
+  max-width: 80%;
+}
+
+.productive-section .productive-text h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.productive-section .productive-text p {
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+  color: #e6e6e6;
+}
+
+.productive-section .productive-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  border-bottom: 1px solid #65e2d9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productive-section .productive-link p {
+  color: #65e2d9;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  font-family: "Raleway", sans-serif;
+}
+
+.testimonial-section {
+  background-color: #181f2a;
+  height: 110rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial-section .testimonial-content {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial-section .testimonial-content .testimonial-quotes img {
+  width: 10%;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards .testimonial-card {
+  min-height: 20rem;
+  margin-bottom: 2rem;
+  border-radius: 3%;
+  background-color: #202a3c;
+  padding: 2.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards .testimonial-card p {
+  color: #cccccc;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards .testimonial-card .testimonial-meta-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards .testimonial-card .testimonial-meta-information img {
+  border-radius: 50%;
+  width: 15%;
+  margin-right: 1rem;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards .testimonial-card .testimonial-meta-information .testimonial-meta-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards .testimonial-card .testimonial-meta-information .testimonial-meta-text h4 {
+  font-size: 1.4rem;
+}
+
+.testimonial-section .testimonial-content .testimonial-cards .testimonial-card .testimonial-meta-information .testimonial-meta-text p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+.testimonial-section .get-access-card {
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+  background-color: #1c2431;
+  padding: 4rem 2rem 2rem 2rem;
+  border-radius: 3%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testimonial-section .get-access-card h4 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-section .get-access-card p {
+  text-align: center;
+  line-height: 2.2rem;
+  color: #e6e6e6;
+}
+
+.testimonial-section .get-access-card form {
+  width: 100%;
+  height: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testimonial-section .get-access-card form input {
+  border: none;
+  color: black;
+  border-top-right-radius: 100% 300px;
+  border-top-left-radius: 100% 300px;
+  border-bottom-right-radius: 100% 300px;
+  border-bottom-left-radius: 100% 300px;
+  width: 100%;
+  padding: 1.6rem;
+}
+
+.testimonial-section .get-access-card form input::-webkit-input-placeholder {
+  color: gray;
+  text-align: left;
+}
+
+.testimonial-section .get-access-card form input:-ms-input-placeholder {
+  color: gray;
+  text-align: left;
+}
+
+.testimonial-section .get-access-card form input::-ms-input-placeholder {
+  color: gray;
+  text-align: left;
+}
+
+.testimonial-section .get-access-card form input::placeholder {
+  color: gray;
+  text-align: left;
+}
+
+.testimonial-section .get-access-card form button {
+  border-top-right-radius: 100% 300px;
+  border-top-left-radius: 100% 300px;
+  border-bottom-right-radius: 100% 300px;
+  border-bottom-left-radius: 100% 300px;
+  padding: 1.6rem;
+  text-align: center;
+  border: none;
+  background: linear-gradient(60deg, #65e2d9, #339ecc);
+  font-weight: 700;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

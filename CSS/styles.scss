@@ -300,3 +300,40 @@ html {
         }
     }
 }
+
+//footer section
+
+.footer-section {
+    min-height: 100rem;
+    background-color: hsl(216, 53%, 9%);
+
+    .footer-content {
+        position: relative;
+        transform: translateY(50%);
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+        .fylo-location {
+            img {
+                margin-bottom: 4rem;
+                margin-left: 2rem;
+            }
+            .location {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                img {
+                    margin-right: 1.6rem;
+                    width: 15%;
+                    padding-top: 1rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                }
+            }
+        }
+    }
+}

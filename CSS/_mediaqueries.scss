@@ -1,0 +1,309 @@
+@media screen and (min-width: 670px) {
+    .nav-bar {
+        .nav-bar-content {
+            .nav-links {
+                display: flex;
+                min-width: 40%;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    .intro-section {
+        .intro-text {
+            top: 65%;
+        }
+    }
+    .information-section {
+        .information-card {
+            transform: translateY(100%);
+        }
+    }
+
+    .productive-section {
+        .productive-image {
+            margin-bottom: 5rem;
+        }
+        .productive-link {
+            width: 30%;
+        }
+    }
+    .get-access-card {
+        p {
+            max-width: 75%;
+        }
+        .get-access-form {
+            .get-access-input {
+                width: 35rem;
+            }
+            .get-access-button {
+                //change these to .classname instead of selecting by elements
+
+                width: 35rem;
+            }
+        }
+    }
+}
+//laptop view
+@media screen and (min-width: 1100px) {
+    .nav-bar {
+        .nav-bar-content {
+            #nav-logo {
+                padding-top: 2rem;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .nav-links {
+                display: flex;
+                min-width: 30%;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    .intro-section {
+        .intro-image {
+            max-width: 45%;
+            transform: translateY(0%);
+        }
+        .intro-text {
+            top: 60%;
+            max-width: 35%;
+        }
+    }
+    .information-section {
+        min-height: 80vh;
+        .information-section-content {
+            min-height: 80%;
+            max-width: 70%;
+            display: grid;
+            grid-row-gap: 10rem;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .information-card {
+            transform: translateY(0%);
+            min-height: 10rem;
+        }
+    }
+    .productive-section {
+        .productive-section-content {
+            flex-direction: row;
+            max-width: 90%;
+
+            .productive-image {
+                max-width: 100%;
+                margin-right: 5rem;
+            }
+            .productive-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3 {
+                    text-align: left;
+                    font-size: 3.2rem;
+                    max-width: 80%;
+                }
+
+                .productive-link {
+                    width: 16rem;
+                }
+            }
+        }
+    }
+    .testimonial-section {
+        height: 62rem;
+        display: flex;
+        align-items: center;
+        .testimonial-content {
+            max-width: 90%;
+            .testimonial-quotes {
+                position: relative;
+                z-index: 2;
+                top: 8%;
+                max-width: 60%;
+            }
+            .testimonial-cards {
+                position: relative;
+                z-index: 5;
+                width: 90vw;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .testimonial-card {
+                    min-height: 20rem;
+                    margin-bottom: 0;
+                    width: 28vw;
+                }
+            }
+        }
+        .get-access-card {
+            max-width: 60%;
+
+            .get-access-form {
+                flex-direction: row;
+                .get-access-input {
+                    width: 45rem;
+                    border-top-right-radius: 100%400px;
+                    border-top-left-radius: 100%400px;
+                    border-bottom-right-radius: 100%400px;
+                    border-bottom-left-radius: 100%400px;
+                }
+                .get-access-button {
+                    //change border radius on button next
+                    flex-wrap: nowrap;
+                    width: 20rem;
+                }
+            }
+        }
+    }
+    .footer-section {
+        min-height: 50rem;
+        .footer-content {
+            max-width: 90%;
+            flex-direction: row;
+            transform: translateY(175%);
+            align-items: flex-start;
+            justify-content: space-between;
+            .fylo-location {
+                transform: translateY(-50%);
+                margin-bottom: 0;
+                max-width: 40%;
+                img {
+                    margin-bottom: 1rem;
+                }
+                .location {
+                    justify-content: flex-start;
+                    p {
+                    }
+                }
+            }
+            .phone-and-email {
+                margin-bottom: 0;
+            }
+            .about-us {
+                margin: 0 auto;
+                min-width: 5rem;
+                margin-bottom: 0;
+                li {
+                    padding: 0.6rem;
+                }
+                justify-content: flex-start;
+            }
+            .contact-us {
+                li {
+                    padding: 0.6rem;
+                }
+                margin: 0 auto;
+                min-width: 5rem;
+                margin-bottom: 0;
+                justify-content: flex-start;
+            }
+            .social-links {
+                max-width: 15%;
+            }
+            .attribution {
+                position: absolute;
+                bottom: 0%;
+            }
+        }
+    }
+}
+//desktop view
+@media screen and (min-width: 1600px) {
+    .nav-bar {
+        .nav-bar-content {
+            #nav-logo {
+                padding-top: 2rem;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .nav-links {
+                min-width: 20%;
+            }
+        }
+    }
+    .intro-section {
+        .intro-image {
+            transform: translateY(-10%);
+            max-width: 40%;
+        }
+        .intro-text {
+            h1 {
+                font-size: 3rem;
+                word-spacing: 0.4rem;
+            }
+            p {
+                font-size: 2rem;
+                max-width: 90%;
+            }
+        }
+    }
+    .information-section {
+        min-height: 50rem;
+        .information-card {
+            transform: translateY(-100%);
+            .information-header {
+                font-size: 2.6rem;
+            }
+            .information-text {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .productive-section {
+        .productive-image {
+            width: 60%;
+        }
+    }
+    .testimonial-section {
+        .testimonial-content {
+            max-width: 80%;
+            .testimonial-cards {
+                width: auto;
+
+                .testimonial-card {
+                    margin-right: 4rem;
+                    max-width: 80%;
+                    width: 40rem;
+                    border-radius: 2%;
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .get-access-card {
+            .get-access-form {
+                .get-access-input {
+                    width: 60%;
+                    border-top-right-radius: 100%600px;
+                    border-top-left-radius: 100%600px;
+                    border-bottom-right-radius: 100%600px;
+                    border-bottom-left-radius: 100%600px;
+                }
+                .get-access-button {
+                    width: 25%;
+                }
+            }
+        }
+    }
+    .footer-section {
+        .footer-content {
+            transform: translateY(225%);
+            max-width: 80%;
+            .fylo-location {
+                width: 50rem;
+                margin-right: 8rem;
+                .location {
+                }
+            }
+            .phone-and-email {
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    //make productive image bigger, and maxwidth text next to it
+}

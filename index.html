@@ -5,35 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- displays site properly based on user's device -->
         <link rel="stylesheet" href="CSS/styles.css" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
             crossorigin="anonymous"
         />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        <title>
-            Frontend Mentor | Fylo landing page with dark theme and features
-            grid
-        </title>
+        <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
         <style>
@@ -49,7 +36,7 @@
     </head>
     <body>
         <nav class="nav-bar">
-            <div class="nav-bar-content">
+            <div class="nav-bar-content" data-aos="fade" data-aos-duration="2000">
                 <div id="nav-logo">
                     <img src="images/logo.svg" />
                 </div>
@@ -61,86 +48,64 @@
             </div>
         </nav>
         <section class="intro-section">
-            <img class="intro-image" src="./images/illustration-intro.png" />
-            <div class="intro-text">
-                <h1>
-                    All your files in one secure location, accessible anywhere.
-                </h1>
+            <img data-aos="fade" data-aos-duration="2000" class="intro-image" src="./images/illustration-intro.png" />
+
+            <div data-aos="fade" data-aos-duration="2000" class="intro-text">
+                <h1>All your files in one secure location, accessible anywhere.</h1>
                 <p>
-                    Fylo stores all your most important files in one secure
-                    location. Access them wherever you need, share and
-                    collaborate with friends, family, and co-workers.
+                    Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with
+                    friends, family, and co-workers.
                 </p>
                 <button class="intro-button">Get Started</button>
             </div>
-            <img
-                class="intro-curvy-background-mobile"
-                src="images/bg-curvy-mobile.svg"
-            />
+            <img class="intro-curvy-background-mobile" src="images/bg-curvy-mobile.svg" />
         </section>
         <section class="information-section">
-            <div class="information-card">
-                <img
-                    class="information-image"
-                    src="images/icon-access-anywhere.svg"
-                />
-                <h3 class="information-header">Access your files, anywhere</h3>
-                <p class="information-text">
-                    The ability to use a smartphone, tablet, or computer to
-                    access your account means your files follow you everywhere.
-                </p>
-            </div>
-            <div class="information-card">
-                <img class="information-image" src="images/icon-security.svg" />
-                <h3 class="information-header">Security you can trust</h3>
-                <p class="information-text">
-                    2-factor authentication and user-controlled encryption are
-                    just a couple of the security features we allow to help
-                    secure your files.
-                </p>
-            </div>
-            <div class="information-card">
-                <img
-                    class="information-image"
-                    src="images/icon-collaboration.svg"
-                />
+            <div class="information-section-content" data-aos="fade-left" data-aos-duration="1000">
+                <div class="information-card">
+                    <img class="information-image" src="images/icon-access-anywhere.svg" />
+                    <h3 class="information-header">Access your files, anywhere</h3>
+                    <p class="information-text">
+                        The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.
+                    </p>
+                </div>
+                <div class="information-card">
+                    <img class="information-image" src="images/icon-security.svg" />
+                    <h3 class="information-header">Security you can trust</h3>
+                    <p class="information-text">
+                        2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your
+                        files.
+                    </p>
+                </div>
+                <div class="information-card">
+                    <img class="information-image" src="images/icon-collaboration.svg" />
 
-                <h3 class="information-header">Real-time collaboration</h3>
-                <p class="information-text">
-                    Securely share files and folders with friends, family and
-                    colleagues for live collaboration. No email attachments
-                    required.
-                </p>
-            </div>
-            <div class="information-card">
-                <img class="information-image" src="images/icon-any-file.svg" />
-                <h3 class="information-header">Store any type of file</h3>
-                <p class="information-text">
-                    Whether you're sharing holidays photos or work documents,
-                    Fylo has you covered allowing for all file types to be
-                    securely stored and shared.
-                </p>
+                    <h3 class="information-header">Real-time collaboration</h3>
+                    <p class="information-text">
+                        Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+                    </p>
+                </div>
+                <div class="information-card">
+                    <img class="information-image" src="images/icon-any-file.svg" />
+                    <h3 class="information-header">Store any type of file</h3>
+                    <p class="information-text">
+                        Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely
+                        stored and shared.
+                    </p>
+                </div>
             </div>
         </section>
         <section class="productive-section">
-            <img
-                class="productive-image"
-                src="./images/illustration-stay-productive.png"
-            />
-            <div class="productive-text">
-                <h3>Stay productive, wherever you are</h3>
-                <p>
-                    Never let location be an issue when accessing your files.
-                    Fylo has you covered for all of your file stoarge needs.
-                </p>
-                <p>
-                    Securely share files and folders with friends, family and
-                    colleagues for live collaboration. No email attachments
-                    required.
-                </p>
-                <div class="productive-link">
-                    <p>See how Fylo works</p>
-                    <img src="./images/icon-arrow.svg" />
+            <div data-aos="fade-left" data-aos-duration="1000" class="productive-section-content">
+                <img class="productive-image" src="./images/illustration-stay-productive.png" />
+                <div class="productive-text">
+                    <h3>Stay productive, wherever you are</h3>
+                    <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file stoarge needs.</p>
+                    <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+                    <div class="productive-link">
+                        <p>See how Fylo works</p>
+                        <img src="./images/icon-arrow.svg" />
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,11 +115,10 @@
                     <img src="./images/bg-quotes.png" />
                 </div>
                 <div class="testimonial-cards">
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="fade-right" data-aos-duration="1000">
                         <p>
-                            Fylo has improved our productivity by an order of
-                            magnitude. Since making the switch, our team has
-                            become a well-oiled collaboration machine.
+                            Fylo has improved our productivity by an order of magnitude. Since making the switch, our team has become a well-oiled
+                            collaboration machine.
                         </p>
                         <div class="testimonial-meta-information">
                             <img src="./images/profile-1.jpg" />
@@ -164,11 +128,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="1000">
                         <p>
-                            Fylo has improved our productivity by an order of
-                            magnitude. Since making the switch, our team has
-                            become a well-oiled collaboration machine.
+                            Fylo has improved our productivity by an order of magnitude. Since making the switch, our team has become a well-oiled
+                            collaboration machine.
                         </p>
                         <div class="testimonial-meta-information">
                             <img src="./images/profile-2.jpg" />
@@ -178,11 +141,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="fade-left" data-aos-duration="1000">
                         <p>
-                            Fylo has improved our productivity by an order of
-                            magnitude. Since making the switch, our team has
-                            become a well-oiled collaboration machine.
+                            Fylo has improved our productivity by an order of magnitude. Since making the switch, our team has become a well-oiled
+                            collaboration machine.
                         </p>
                         <div class="testimonial-meta-information">
                             <img src="./images/profile-3.jpg" />
@@ -197,19 +159,13 @@
             <div class="get-access-card">
                 <h4>Get early access today</h4>
                 <p>
-                    It only takes a minute to sign up and our free starter tier
-                    is extremely generous. If you have any questions, our
-                    support team would be happy to help you.
+                    It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team
+                    would be happy to help you.
                 </p>
 
                 <form action="" method="get" class="get-access-form">
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="email@example.com"
-                    />
-                    <button type="button">Get Started For Free</button>
+                    <input class="get-access-input" type="email" id="email" name="email" placeholder="email@example.com" required />
+                    <button class="get-access-button" type="submit">Get Started For Free</button>
                 </form>
             </div>
         </section>
@@ -219,22 +175,25 @@
                 <div class="fylo-location">
                     <img src="./images/logo.svg" alt="fylo logo" />
                     <div class="location">
-                        <img src="./images/icon-location.svg" />
+                        <div class="location-image">
+                            <img src="./images/icon-location.svg" />
+                        </div>
+
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Consequatur dolores commodi itaque. Numquam
-                            voluptatum unde incidunt praesentium itaque vitae
-                            porro.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolores commodi itaque. Numquam voluptatum unde
+                            incidunt praesentium itaque vitae porro.
                         </p>
                     </div>
                 </div>
                 <div class="phone-and-email">
                     <div class="phone">
-                        <img src="./images/icon-phone.svg" />
+                        <div class="phone-icon"><img src="./images/icon-phone.svg" /></div>
+
                         <p>+1-543-123-4567</p>
                     </div>
                     <div class="email">
-                        <img src="./images/icon-email.svg" />
+                        <div class="email-icon"><img src="./images/icon-email.svg" /></div>
+
                         <p>example@fylo.com</p>
                     </div>
                 </div>
@@ -253,22 +212,21 @@
                 </ul>
 
                 <ul class="social-links">
-                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-facebook-f facebook-icon"></i></li>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-instagram"></i></li>
                 </ul>
 
                 <p class="attribution">
                     Challenge by
-                    <a
-                        href="https://www.frontendmentor.io?ref=challenge"
-                        target="_blank"
-                        >Frontend Mentor</a
-                    >. Coded by
-                    <a href="https://twitter.com/dj_y4ssin">Yassin Moussaoui</a
-                    >.
+                    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br />
+                    Coded by <a href="https://twitter.com/dj_y4ssin">Yassin Moussaoui</a>.
                 </p>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
